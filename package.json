@@ -1,11 +1,11 @@
 {
-  "name": "typescript-project-template",
+  "name": "js-data-sttructures-algorithms",
   "version": "1.0.0",
-  "description": " Simple typescript project template",
+  "description": "Data Structures Algorithms using Javascript and Typescript",
   "main": "dist/js/bundle.js",
   "scripts": {
-    "pretest": "tsc --target es5 --outDir ./.tmp test/index.ts",
-    "test": "npm run pretest && jasmine ./.tmp/test/index.js",
+    "pretest": "tsc --target es5 --outDir ./.tmp src/**/*.spec.ts",
+    "test": "npm run pretest && jasmine ./.tmp/*.spec.js",
     "build": "rollup -c",
     "start": "http-server ./docs -o --cors",
     "watch": "rollup -c -w"
